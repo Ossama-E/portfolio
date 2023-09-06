@@ -159,8 +159,7 @@ span.navbar-text {
    transition: 0.3s ease-in-out;
 }
 .social-icon a:hover img {
-   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg)
-      brightness(95%) contrast(86%);
+   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 .navbar-text button {
    font-weight: 700;
@@ -255,11 +254,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
    font-weight: 700;
    letter-spacing: 0.8px;
    padding: 8px 10px;
-   background: linear-gradient(
-      90.21deg,
-      rgba(170, 54, 124, 0.5) -5.91%,
-      rgba(74, 47, 189, 0.5) 111.58%
-   );
+   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
    border: 1px solid rgba(255, 255, 255, 0.5);
    font-size: 20px;
    margin-bottom: 16px;
@@ -354,6 +349,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
    bottom: 0;
    width: 40%;
    z-index: -4;
+}
+
+.link-btn {
+   text-decoration: none;
 }
 
 /************ Projects CSS ************/
@@ -461,6 +460,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
    top: 50%;
    opacity: 1;
 }
+
 .proj-txtx h4 {
    font-size: 30px;
    font-weight: 700;
@@ -635,4 +635,54 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
    color: #b8b8b8;
    letter-spacing: 0.5px;
    margin-top: 20px;
+}
+
+.project-image {
+   width: 420px !important;
+   height: 260px !important;
+   object-fit: cover;
+}
+
+.company-logo {
+   max-width: 50px; /* Adjust based on your design needs */
+   max-height: 50px;
+   margin-right: 10px;
+   float: left; /* To float it left of the company name */
+}
+
+.work-exp-card {
+   border: 1px solid #eaeaea;
+   padding: 15px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   margin-bottom: 15px;
+}
+
+.work-exp-header {
+   border-bottom: 1px solid #eaeaea;
+   margin-bottom: 10px;
+   padding-bottom: 10px;
+}
+
+.work-exp-duration {
+   display: block;
+   margin-top: 5px;
+   font-style: italic;
+   color: #777;
+}
+
+.work-exp-description {
+   margin-bottom: 10px;
+}
+
+.work-exp-link {
+   text-decoration: none;
+   color: #007bff; /* Adjust link color if needed */
+}
+.work-exp-description ul {
+   padding-left: 20px; /* Adjust if the bullet points are too indented */
+   list-style-type: disc; /* Style of the bullet point, can also be circle, square, etc. */
+}
+
+.work-exp-description li {
+   margin-bottom: 10px; /* Adjust spacing between bullet points */
 }

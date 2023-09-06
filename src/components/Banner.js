@@ -4,20 +4,18 @@ import { ArrowRightCircle } from "react-bootstrap-icons"
 import headerImg from "../assets/img/header-img.svg"
 import { useCallback } from "react"
 
-const toRotate = ["Web Developer", "Web Designer", "test text"]
+const toRotate = ["Web Developer", "Problem-solver", "Learner", "Soccer player"]
 export const Banner = () => {
    const [currTitle, setCurrTitle] = useState(0)
    const [isDeleting, setIsDeleting] = useState(false)
    const [text, setText] = useState("")
    const [delta, setDelta] = useState(300 - Math.random() * 100)
-   const period = 100
+   const period = 700
 
    const tick = useCallback(() => {
       let i = currTitle % toRotate.length
       let fullText = toRotate[i]
-      let updatedText = isDeleting
-         ? fullText.substring(0, text.length - 1)
-         : fullText.substring(0, text.length + 1)
+      let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1)
       setText(updatedText)
 
       if (isDeleting) {
@@ -50,13 +48,15 @@ export const Banner = () => {
                <Col xs={12} md={6} xl={7}>
                   <span className="tagline"> Welcome To My Portfolio</span>
                   <h1>
-                     Hi I'm <span className="wrap">{text}</span>
+                     Hello, I'm a <span className="wrap">{text}</span>
                   </h1>
-                  <p>I'm a passionate problem-solver</p>
-                  <button onClick={() => console.log("connect")}>
-                     Let's Connect
-                     <ArrowRightCircle size={25} />
-                  </button>
+                  <p>I'm also Ossama</p>
+                  <a className="link-btn" href="https://www.linkedin.com/in/ossamaelhelali">
+                     <button>
+                        Let's Connect
+                        <ArrowRightCircle size={25} />
+                     </button>
+                  </a>
                </Col>
                <Col xs={12} md={6} xl={5}>
                   <img src={headerImg} alt="Header Img" />
