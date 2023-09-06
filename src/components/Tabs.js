@@ -7,6 +7,11 @@ import NeighBoard from "../assets/img/NeighBoard.png"
 import LCHints from "../assets/img/LCHints.png"
 import FundFlow from "../assets/img/FundFlow.png"
 import Sortify from "../assets/img/Sortify.png"
+import MD from "../assets/img/MD.png"
+import Seeds from "../assets/img/Seeds.png"
+import tabLogo from "../assets/img/tab.png"
+import Uw from "../assets/img/uw.png"
+import Wlu from "../assets/img/wlu.png"
 
 export const Projects = () => {
    const projects = [
@@ -39,7 +44,7 @@ export const Projects = () => {
       {
          companyName: "MuslimDo",
          jobTitle: "SWE Intern",
-         companyLogo: NeighBoard,
+         companyLogo: MD,
          jobDescription: [
             `Engineered multiple CRUD systems, enabling efficient communications with backend services, and enhancing overall application performance.`,
             `Utilized user behavior analytics tools to systematically improve UX, resulting in more intuitive navigation and user flow on the company’s app and website.`,
@@ -51,7 +56,7 @@ export const Projects = () => {
       {
          companyName: "Seeds of Leadership",
          jobTitle: "Motion Graphics Designer",
-         companyLogo: NeighBoard,
+         companyLogo: Seeds,
          jobDescription: [
             `Led a team of 3 designers to produce promotional animated videos to attract youth aged 14-19 using Adobe After Effects.`,
             `Developed and pitched storyboards and timelines for assigned projects.`,
@@ -63,7 +68,7 @@ export const Projects = () => {
       {
          companyName: "Thomas A. Blakelock",
          jobTitle: "Math Tutor",
-         companyLogo: NeighBoard,
+         companyLogo: tabLogo,
          jobDescription: [
             `Developed, implemented, and explained practice problems for students.`,
             `Assessed students' skills; guided growth in strengths and overcoming weaknesses.
@@ -80,7 +85,7 @@ export const Projects = () => {
          program: "Bachelor's of Computer Science",
          fromDate: "Sep 2022",
          toDate: "Apr 2027",
-         schoolLogo: "",
+         schoolLogo: Uw,
          relevantCourses: ["Algorithm Design and Data Abstraction", "Tools and Techniques for Software Development", "Object-Oriented Software Development"],
       },
       {
@@ -88,7 +93,7 @@ export const Projects = () => {
          program: "Bachelor's of Business Administration",
          fromDate: "Sep 2022",
          toDate: "Apr 2027",
-         schoolLogo: "",
+         schoolLogo: Wlu,
          relevantCourses: [],
       },
    ]
@@ -98,7 +103,7 @@ export const Projects = () => {
          <Container>
             <Row>
                <Col>
-                  <h2 className="pb-5">Projects and Experience</h2>
+                  <h2 className="pb-5">More About Me</h2>
                   <Tab.Container id="projects-tab" defaultActiveKey="first">
                      <Nav className="nav-pills mb-5 justify-content-center align-items-center">
                         <Nav.Item>
