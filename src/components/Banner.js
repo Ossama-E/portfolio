@@ -4,12 +4,12 @@ import { ArrowRightCircle } from "react-bootstrap-icons"
 import headerImg from "../assets/img/header-img.svg"
 import { useCallback } from "react"
 
-const toRotate = ["Web Developer", "Problem-solver", "Learner", "Soccer player"]
+const toRotate = ["Learner", "Problem-solver", "Web Developer", "Soccer player"]
 export const Banner = () => {
    const [currTitle, setCurrTitle] = useState(0)
    const [isDeleting, setIsDeleting] = useState(false)
    const [text, setText] = useState("")
-   const [delta, setDelta] = useState(300 - Math.random() * 100)
+   const [delta, setDelta] = useState(50)
    const period = 700
 
    const tick = useCallback(() => {
@@ -27,7 +27,7 @@ export const Banner = () => {
       } else if (isDeleting && updatedText === "") {
          setIsDeleting(false)
          setCurrTitle(currTitle + 1)
-         setDelta(500)
+         setDelta(300)
       }
    }, [text, isDeleting, currTitle])
 
