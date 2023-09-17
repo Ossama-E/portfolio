@@ -9,6 +9,7 @@ import FundFlow from "../assets/img/FundFlow.png"
 import Sortify from "../assets/img/Sortify.png"
 import MD from "../assets/img/MD.png"
 import Seeds from "../assets/img/Seeds.png"
+import CCG from "../assets/img/CCG.png"
 import tabLogo from "../assets/img/tab.png"
 import Uw from "../assets/img/uw.png"
 import Wlu from "../assets/img/wlu.png"
@@ -41,6 +42,18 @@ export const Projects = () => {
       },
    ]
    const experience = [
+      {
+         companyName: "Coach Chihab Group",
+         jobTitle: "Technical Lead",
+         companyLogo: CCG,
+         jobDescription: [
+            `Engineered a Vue.js-based check-in platform, reducing check-in time by 95% and processing over 50 attendees.`,
+            `Utilized Firebase's Real-time Database API for dynamic monitoring and visualization of attendee check-in metrics.`,
+            `Analyzed and compiled a dataset of 5+ LMSs according to attendees' profiles.`,
+         ],
+         fromDate: "Aug 2023",
+         toDate: "Present",
+      },
       {
          companyName: "MuslimDo",
          jobTitle: "SWE Intern",

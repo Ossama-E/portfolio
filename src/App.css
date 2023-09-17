@@ -243,13 +243,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Banner CSS ************/
 .banner {
+   position: relative;
    margin-top: 0;
    padding: 260px 0 100px 0;
-   background-image: url("./assets/img/banner-bg.png");
    background-position: top center;
    background-size: cover;
    background-repeat: no-repeat;
 }
+
+.banner::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-image: url("./assets/img/header2.jpg");
+   filter: brightness(50%);
+   background-position: top center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   z-index: -1;
+}
+
 .banner .tagline {
    font-weight: 700;
    letter-spacing: 0.8px;
@@ -644,10 +660,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .company-logo {
-   max-width: 50px; /* Adjust based on your design needs */
+   max-width: 50px;
    max-height: 50px;
    margin-right: 10px;
-   float: left; /* To float it left of the company name */
+   float: left;
 }
 
 .work-exp-card {
@@ -676,13 +692,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .work-exp-link {
    text-decoration: none;
-   color: #007bff; /* Adjust link color if needed */
+   color: #007bff;
 }
 .work-exp-description ul {
-   padding-left: 20px; /* Adjust if the bullet points are too indented */
-   list-style-type: disc; /* Style of the bullet point, can also be circle, square, etc. */
+   padding-left: 20px;
+   list-style-type: disc;
 }
 
 .work-exp-description li {
-   margin-bottom: 10px; /* Adjust spacing between bullet points */
+   margin-bottom: 10px;
 }
