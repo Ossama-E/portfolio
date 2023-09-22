@@ -95,7 +95,7 @@ export const Projects = () => {
    const education = [
       {
          name: "University of Waterloo",
-         program: "Bachelor's of Computer Science",
+         program: "Bachelor of Computer Science",
          fromDate: "Sep 2022",
          toDate: "Apr 2027",
          schoolLogo: Uw,
@@ -103,7 +103,7 @@ export const Projects = () => {
       },
       {
          name: "Wilfrid Lauirer University",
-         program: "Bachelor's of Business Administration",
+         program: "Bachelor` of Business Administration",
          fromDate: "Sep 2022",
          toDate: "Apr 2027",
          schoolLogo: Wlu,

@@ -4,7 +4,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons"
 import headerImg from "../assets/img/header-img.svg"
 import { useCallback } from "react"
 
-const toRotate = ["Learner", "Problem-solver", "Web Developer", "Soccer player"]
+const toRotate = ["Learner", "Problem-solver", "Software Engineer", "Soccer player", "Mathematician"]
 export const Banner = () => {
    const [currTitle, setCurrTitle] = useState(0)
    const [isDeleting, setIsDeleting] = useState(false)
