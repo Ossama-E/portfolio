@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import { ArrowRightCircle } from "react-bootstrap-icons"
-import headerImg from "../assets/img/header-img.svg"
+import headerImg from "../assets/img/headShot.PNG"
 import { useCallback } from "react"
 
 const toRotate = ["Learner", "Problem-solver", "Software Engineer", "Soccer player", "Mathematician"]

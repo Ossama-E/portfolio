@@ -6,7 +6,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png"
 import NeighBoard from "../assets/img/NeighBoard.png"
 import LCHints from "../assets/img/LCHints.png"
 import FundFlow from "../assets/img/FundFlow.png"
-import Sortify from "../assets/img/Sortify.png"
+import Sortify from "../assets/img/SortifyAI.png"
 import MD from "../assets/img/MD.png"
 import Seeds from "../assets/img/Seeds.png"
 import CCG from "../assets/img/CCG.png"
@@ -103,7 +103,7 @@ export const Projects = () => {
       },
       {
          name: "Wilfrid Lauirer University",
-         program: "Bachelor` of Business Administration",
+         program: "Bachelor of Business Administration",
          fromDate: "Sep 2022",
          toDate: "Apr 2027",
          schoolLogo: Wlu,
