@@ -7,14 +7,14 @@ import NeighBoard from "../assets/img/NeighBoard.png"
 import LCHints from "../assets/img/LCHints.png"
 import FundFlow from "../assets/img/FundFlow.png"
 import Sortify from "../assets/img/SortifyAI.png"
-import MD from "../assets/img/MD.png"
-import Seeds from "../assets/img/Seeds.png"
+import MD from "../assets/img/MD2.png"
+import Kenna from "../assets/img/Kenna.png"
 import CCG from "../assets/img/CCG.png"
 import tabLogo from "../assets/img/tab.png"
 import Uw from "../assets/img/uw.png"
 import Wlu from "../assets/img/wlu.png"
 
-export const Projects = () => {
+export const Info = () => {
    const projects = [
       {
          title: "NeighBoard",
@@ -43,6 +43,18 @@ export const Projects = () => {
    ]
    const experience = [
       {
+         companyName: "Kenna",
+         jobTitle: "Full Stack Developer Intern",
+         companyLogo: Kenna,
+         jobDescription: [
+            `Engineered a Vue.js-based check-in platform, reducing check-in time by 95% and processing over 50 attendees.`,
+            `Utilized Firebase's Real-time Database API for dynamic monitoring and visualization of attendee check-in metrics.`,
+            `Analyzed and compiled a dataset of 5+ LMSs according to attendees' profiles.`,
+         ],
+         fromDate: "Jan 2024",
+         toDate: "Present",
+      },
+      {
          companyName: "Coach Chihab Group",
          jobTitle: "Technical Lead",
          companyLogo: CCG,
@@ -52,7 +64,7 @@ export const Projects = () => {
             `Analyzed and compiled a dataset of 5+ LMSs according to attendees' profiles.`,
          ],
          fromDate: "Aug 2023",
-         toDate: "Present",
+         toDate: "Dec 2023",
       },
       {
          companyName: "MuslimDo",
@@ -65,18 +77,6 @@ export const Projects = () => {
          ],
          fromDate: "May 2023",
          toDate: "Aug 2023",
-      },
-      {
-         companyName: "Seeds of Leadership",
-         jobTitle: "Motion Graphics Designer",
-         companyLogo: Seeds,
-         jobDescription: [
-            `Led a team of 3 designers to produce promotional animated videos to attract youth aged 14-19 using Adobe After Effects.`,
-            `Developed and pitched storyboards and timelines for assigned projects.`,
-            `Managed the entire video production process from brainstorming to providing feedback on other designers’ work.`,
-         ],
-         fromDate: "Jul 2022",
-         toDate: "Sep 2022",
       },
       {
          companyName: "Thomas A. Blakelock",
@@ -120,10 +120,10 @@ export const Projects = () => {
                   <Tab.Container id="projects-tab" defaultActiveKey="first">
                      <Nav className="nav-pills mb-5 justify-content-center align-items-center">
                         <Nav.Item>
-                           <Nav.Link eventKey="first">Projects</Nav.Link>
+                           <Nav.Link eventKey="first">Experience</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                           <Nav.Link eventKey="second">Experience</Nav.Link>
+                           <Nav.Link eventKey="second">Projects</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                            <Nav.Link eventKey="third">Education</Nav.Link>
@@ -132,15 +132,15 @@ export const Projects = () => {
                      <Tab.Content>
                         <Tab.Pane eventKey="first">
                            <Row>
-                              {projects.map((project, index) => {
-                                 return <ProjectCard key={index} {...project} />
+                              {experience.map((experience, index) => {
+                                 return <WorkCard key={index} {...experience} />
                               })}
                            </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
                            <Row>
-                              {experience.map((experience, index) => {
-                                 return <WorkCard key={index} {...experience} />
+                              {projects.map((project, index) => {
+                                 return <ProjectCard key={index} {...project} />
                               })}
                            </Row>
                         </Tab.Pane>

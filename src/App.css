@@ -700,3 +700,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .work-exp-description li {
    margin-bottom: 10px;
 }
+.companyName {
+   margin-top: 0px;
+   margin-bottom: 30px;
+ }

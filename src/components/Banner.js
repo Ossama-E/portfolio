@@ -15,11 +15,11 @@ export const Banner = () => {
    const tick = useCallback(() => {
       let i = currTitle % toRotate.length
       let fullText = toRotate[i]
-      let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1)
+      let updatedText = isDeleting ? fullText.substring(0, text.length - 2) : fullText.substring(0, text.length + 1)
       setText(updatedText)
 
       if (isDeleting) {
-         setDelta((prevDelta) => prevDelta / 2)
+         setDelta((prevDelta) => prevDelta / 1.8)
       }
       if (!isDeleting && updatedText === fullText) {
          setIsDeleting(true)
@@ -27,7 +27,7 @@ export const Banner = () => {
       } else if (isDeleting && updatedText === "") {
          setIsDeleting(false)
          setCurrTitle(currTitle + 1)
-         setDelta(300)
+         setDelta(100)
       }
    }, [text, isDeleting, currTitle])
 
@@ -35,7 +35,6 @@ export const Banner = () => {
       let ticker = setInterval(() => {
          tick()
       }, delta)
-
       return () => {
          clearInterval(ticker)
       }

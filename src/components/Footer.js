@@ -19,7 +19,7 @@ export const Footer = () => {
                         <img src={Github} alt="icon"></img>
                      </a>
                   </div>
-                  <p>CopyRight 2023. All Rights Reserved</p>
+                  <p>CopyRight 2024. All Rights Reserved</p>
                </Col>
             </Row>
          </Container>

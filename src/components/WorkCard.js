@@ -6,8 +6,8 @@ export const WorkCard = ({ companyName, jobTitle, jobDescription, companyLogo, f
          <div className="work-exp-card">
             <div className="work-exp-header">
                <img src={companyLogo} alt={`${companyName} logo`} className="company-logo" />
-               <h3>{companyName}</h3>
-               <h4>{jobTitle}</h4>
+               <h3>{jobTitle}</h3>
+               <h6 className="companyName">{companyName}</h6>
                <h6>
                   {fromDate} - {toDate}
                </h6>
