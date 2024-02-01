@@ -27,6 +27,21 @@ function NavBar() {
    const onUpdateActiveLink = (value) => {
       setActiveLink(value)
    }
+
+   const onButtonClick = () => {
+      const rawURL = "https://raw.githubusercontent.com/Ossama-E/portfolio/master/Ossama_Elhelali.pdf";
+
+      fetch(rawURL).then((response) => {
+         response.blob().then((blob) => {
+            const fileURL = window.URL.createObjectURL(blob);
+
+            let alink = document.createElement("a");
+            alink.href = fileURL;
+            alink.download = "SamplePDF.pdf";
+            alink.click();
+         });
+      });
+   };
    return (
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
          <Container>
@@ -46,8 +61,11 @@ function NavBar() {
                         <img src={Github} alt="Description" />
                      </a>
                   </div>
-                  <a className="link-btn" href="https://www.linkedin.com/in/ossamaelhelali">
+                  {/* <a className="link-btn" href="https://www.linkedin.com/in/ossamaelhelali">
                      <button className="vvd">Contact Me!</button>
+                  </a> */}
+                  <a className="link-btn" onClick={onButtonClick}>
+                     <button className="vvd">Download My Resume :)</button>
                   </a>
                </span>
             </Navbar.Collapse>
