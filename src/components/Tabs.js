@@ -47,7 +47,7 @@ export const Info = () => {
          jobTitle: "Full Stack Developer Intern",
          companyLogo: Kenna,
          jobDescription: [
-            `Winter2024 - Diving deeper into React, Node, and SQL`,
+            `Winter2024 - Diving deeper into React, Node, and SQL.`,
          ],
          fromDate: "Jan 2024",
          toDate: "Present",
