@@ -43,7 +43,7 @@ function NavBar() {
                      </a>
                   </div>
                   <a href={resume} download="OssamaElhelaliResume">
-                     <button> Download My Resume :)</button>resume
+                     <button> Download My Resume :)</button>
                   </a>
                </span>
             </Navbar.Collapse>
