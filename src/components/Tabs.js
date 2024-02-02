@@ -47,9 +47,7 @@ export const Info = () => {
          jobTitle: "Full Stack Developer Intern",
          companyLogo: Kenna,
          jobDescription: [
-            `Engineered a Vue.js-based check-in platform, reducing check-in time by 95% and processing over 50 attendees.`,
-            `Utilized Firebase's Real-time Database API for dynamic monitoring and visualization of attendee check-in metrics.`,
-            `Analyzed and compiled a dataset of 5+ LMSs according to attendees' profiles.`,
+            `Winter2024 - Diving deeper into React, Node, and SQL`,
          ],
          fromDate: "Jan 2024",
          toDate: "Present",
