@@ -55,7 +55,7 @@ export const Info = () => {
          toDate: "Present",
       },
       {
-         companyName: "Coach Chihab Group",
+         companyName: "Coach Chihab Group - Part Time",
          jobTitle: "Technical Lead",
          companyLogo: CCG,
          jobDescription: [
