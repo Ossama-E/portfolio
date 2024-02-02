@@ -4,6 +4,7 @@ import LinkedIn from "../assets/img/linkedin.svg"
 import Github from "../assets/img/github.svg"
 import logo from "../assets/img/logo.png"
 import { useState, useEffect } from "react"
+import resume from "../assets/pdf/Ossama_Elhelali.pdf"
 
 function NavBar() {
    const [scrolled, setScrolled] = useState(false)
@@ -22,21 +23,6 @@ function NavBar() {
       return () => window.removeEventListener("scroll", onScroll)
    }, [setScrolled])
 
-
-   const onButtonClick = () => {
-      const rawURL = "Ossama_Elhelali.pdf";
-
-      fetch(rawURL).then((response) => {
-         response.blob().then((blob) => {
-            const fileURL = window.URL.createObjectURL(blob);
-
-            let alink = document.createElement("a");
-            alink.href = fileURL;
-            alink.download = "Ossama_Elhelali.pdf";
-            alink.click();
-         });
-      });
-   };
    return (
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
          <Container>
@@ -56,7 +42,9 @@ function NavBar() {
                         <img src={Github} alt="Description" />
                      </a>
                   </div>
-                  <button className="link-btn" onClick={onButtonClick}>Download My Resume :)</button>
+                  <a href={resume} download="OssamaElhelaliResume">
+                     <button> Download My Resume :)</button>resume
+                  </a>
                </span>
             </Navbar.Collapse>
          </Container>
