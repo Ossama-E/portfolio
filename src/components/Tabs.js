@@ -54,7 +54,7 @@ export const Info = () => {
       },
       {
          companyName: "Coach Chihab Group - Part Time",
-         jobTitle: "Technical Lead",
+         jobTitle: "Software Engineer",
          companyLogo: CCG,
          jobDescription: [
             `Engineered a Vue.js-based check-in platform, reducing check-in time by 95% and processing over 50 attendees.`,
