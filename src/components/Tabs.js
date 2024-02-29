@@ -66,7 +66,7 @@ export const Info = () => {
       },
       {
          companyName: "MuslimDo",
-         jobTitle: "SWE Intern",
+         jobTitle: "Software Engineer Intern",
          companyLogo: MD,
          jobDescription: [
             `Engineered multiple CRUD systems, enabling efficient communications with backend services, and enhancing overall application performance.`,
