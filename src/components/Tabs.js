@@ -115,7 +115,7 @@ export const Info = () => {
             <Row>
                <Col>
                   <h2 className="pb-5">More About Me</h2>
-                  <Tab.Container id="projects-tab" defaultActiveKey="first">
+                  <Tab.Container className="tabs-content" id="projects-tab" defaultActiveKey="first" >
                      <Nav className="nav-pills mb-5 justify-content-center align-items-center">
                         <Nav.Item>
                            <Nav.Link eventKey="first">Experience</Nav.Link>

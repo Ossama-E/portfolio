@@ -44,7 +44,7 @@ export const Banner = () => {
       <section className="banner" id="home">
          <Container>
             <Row class="align-items-center">
-               <Col xs={12} md={6} xl={7}>
+               <Col xs={12} md={6} xl={7} className="welcome-container">
                   <span className="tagline"> Welcome To My Portfolio</span>
                   <h1>
                      Hello, I'm a <span className="wrap">{text}</span>
@@ -57,8 +57,8 @@ export const Banner = () => {
                      </button>
                   </a>
                </Col>
-               <Col xs={12} md={6} xl={5}>
-                  <img class="profile-image" src={headerImg} alt="Header Img" />
+               <Col xs={12} md={6} xl={5} className="profile-image-container">
+                  <img className="profile-image" src={headerImg} alt="Header Img" />
                </Col>
             </Row>
          </Container>
