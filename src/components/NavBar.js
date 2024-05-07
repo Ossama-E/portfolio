@@ -4,7 +4,7 @@ import LinkedIn from "../assets/img/linkedin.svg"
 import Github from "../assets/img/github.svg"
 import logo from "../assets/img/logo.png"
 import { useState, useEffect } from "react"
-import resume from "../assets/pdf/Ossama_Elhelali.pdf"
+import resume from "../assets/pdf/OssamaE_Resume.pdf"
 
 function NavBar() {
    const [scrolled, setScrolled] = useState(false)
