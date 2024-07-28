@@ -358,7 +358,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .wrap {
-   height: 2em;
+   height: 2.2em;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -796,6 +796,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
    object-fit: cover;
    width: 450px;
    height: 450px;
+   margin-top: 20px;
 }
 
 
@@ -804,8 +805,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 @media (max-width: 650px) {
    .profile-image {
       margin: 50px;
-      height: 250px;
-      width: 250px;
+      height: 300px;
+      width: 300px;
    }
 
    .welcome-container {
@@ -826,6 +827,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
    .profile-image-container {
       display: flex;
       justify-content: center;
+      margin-top: 20px;
    }
 
    .banner button {

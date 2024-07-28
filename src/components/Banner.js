@@ -44,14 +44,18 @@ export const Banner = () => {
       <section className="banner" id="home">
          <Container>
             <Row class="align-items-center">
-               <Col xs={12} md={6} xl={7} className="welcome-container">
-                  <span className="tagline"> Welcome To My Portfolio</span>
+               <Col xs={12} md={6} xl={7} className="welcome-container" style={{
+                  justifyContent: "center",
+                  alignContent: "center",
+                  textAlign: "center"
+               }}>
+                  {/* <span className="tagline"> Welcome To My House</span> */}
                   <h1>
                      Hello, I'm a <span className="wrap">{text}</span>
                   </h1>
                   <p>I'm also Ossama</p>
                   <a className="link-btn" href="https://www.linkedin.com/in/ossamaelhelali">
-                     <button>
+                     <button style={{ margin: "auto" }}>
                         Let's Connect
                         <ArrowRightCircle size={25} />
                      </button>
