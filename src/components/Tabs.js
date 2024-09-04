@@ -9,6 +9,7 @@ import FundFlow from "../assets/img/FundFlow.png"
 import Sortify from "../assets/img/SortifyAI.png"
 import MD from "../assets/img/MD2.png"
 import Kenna from "../assets/img/Kenna.png"
+import IIC from "../assets/img/IICUwaterloo.png"
 import CCG from "../assets/img/CCG.png"
 import tabLogo from "../assets/img/tab.png"
 import Uw from "../assets/img/uw.png"
@@ -43,17 +44,29 @@ export const Info = () => {
    ]
    const experience = [
       {
+         companyName: "IIC UWaterloo",
+         jobTitle: "Software Engineer",
+         companyLogo: IIC,
+         jobDescription: [
+            'Accelerated search results by 20 % by implementing a dynamic filter to remove outdated and empty records.', 'Automated email workflows, cutting manual errors by 30 % using Google App Script.',
+            'Developed sponsor page, boosting partner visibility and online engagement'
+         ],
+         fromDate: "May 2024",
+         toDate: "Aug 2024",
+      },
+      {
          companyName: "Kenna",
          jobTitle: "Full Stack Developer Intern",
          companyLogo: Kenna,
          jobDescription: [
-            `Winter2024 - Diving deeper into React, Node, and SQL.`,
+            'Led the migration from Lotus Notes, HTML, and CSS to a full - stack Typescript, React, Node, and SQL service.',
+            'Reduced API calls by 87.5 % by merging 8 calls into 1.', ' Created SQL backend and middleware agents to represent data in a visually appealing format on the frontend',
          ],
          fromDate: "Jan 2024",
-         toDate: "Present",
+         toDate: "Apr 2024",
       },
       {
-         companyName: "Coach Chihab Group - Part Time",
+         companyName: "Coach Chihab Group",
          jobTitle: "Software Engineer",
          companyLogo: CCG,
          jobDescription: [
@@ -95,7 +108,7 @@ export const Info = () => {
          name: "University of Waterloo",
          program: "Bachelor of Computer Science",
          fromDate: "Sep 2022",
-         toDate: "Apr 2027",
+         toDate: "Present",
          schoolLogo: Uw,
          relevantCourses: ["Algorithm Design and Data Abstraction", "Tools and Techniques for Software Development", "Object-Oriented Software Development"],
       },
@@ -103,7 +116,7 @@ export const Info = () => {
          name: "Wilfrid Lauirer University",
          program: "Bachelor of Business Administration",
          fromDate: "Sep 2022",
-         toDate: "Apr 2027",
+         toDate: "Present",
          schoolLogo: Wlu,
          relevantCourses: [],
       },
