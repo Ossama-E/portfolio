@@ -7,6 +7,7 @@ import NeighBoard from "../assets/img/NeighBoard.png"
 import LCHints from "../assets/img/LCHints.png"
 import FundFlow from "../assets/img/FundFlow.png"
 import Sortify from "../assets/img/SortifyAI.png"
+import Chess from "../assets/img/chess.png"
 import MD from "../assets/img/MD2.png"
 import Kenna from "../assets/img/Kenna.png"
 import IIC from "../assets/img/IICUwaterloo.png"
@@ -18,10 +19,16 @@ import Wlu from "../assets/img/wlu.png"
 export const Info = () => {
    const projects = [
       {
-         title: "NeighBoard",
-         description: "A Vue.js-based community platform for sharing neighbourhood activities and reports.",
-         imgUrl: NeighBoard,
-         projectUrl: "https://neighboard.netlify.app/#/",
+         title: "Chess",
+         description: "A a full chess game in C++ using advanced OOP, implemented features like checkmate, castling, and more.",
+         imgUrl: Chess,
+         // projectUrl: "https://neighboard.netlify.app/#/",
+      },
+      {
+         title: "Sortify.AI",
+         description: "An ML-powered app for real-time waste sorting, featured at UTM's 2023 DeerHacks Hackathon.",
+         imgUrl: Sortify,
+         projectUrl: "test.com",
       },
       {
          title: "LCHints",
@@ -30,17 +37,18 @@ export const Info = () => {
          projectUrl: "https://lchints-web.herokuapp.com/",
       },
       {
+         title: "NeighBoard",
+         description: "A Vue.js-based community platform for sharing neighbourhood activities and reports.",
+         imgUrl: NeighBoard,
+         projectUrl: "https://neighboard.netlify.app/#/",
+      },
+      {
          title: "FundFlow",
          description: "An efficient web-based banking app for real-time account management and transactions.",
          imgUrl: FundFlow,
          projectUrl: "https://ossama-e.github.io/FundFlow/index.html",
-      },
-      {
-         title: "Sortify.AI",
-         description: "An ML-powered app for real-time waste sorting, featured at UTM's 2023 DeerHacks Hackathon.",
-         imgUrl: Sortify,
-         projectUrl: "test.com",
-      },
+      }
+
    ]
    const experience = [
       {
@@ -48,19 +56,21 @@ export const Info = () => {
          jobTitle: "Software Engineer",
          companyLogo: IIC,
          jobDescription: [
-            'Accelerated search results by 20 % by implementing a dynamic filter to remove outdated and empty records.', 'Automated email workflows, cutting manual errors by 30 % using Google App Script.',
-            'Developed sponsor page, boosting partner visibility and online engagement'
+            'Accelerated search results by 20% by implementing a dynamic filter to remove outdated and empty records',
+            'Cut email manual errors by 30 % through automated email workflows using Google App Script',
+            'Developed multiple sponsor pages that curated to each clients’ highlights and benefits'
          ],
          fromDate: "May 2024",
          toDate: "Aug 2024",
       },
       {
-         companyName: "Kenna",
+         companyName: "Kenna Technologies",
          jobTitle: "Full Stack Developer Intern",
          companyLogo: Kenna,
          jobDescription: [
-            'Led the migration from Lotus Notes, HTML, and CSS to a full - stack Typescript, React, Node, and SQL service.',
-            'Reduced API calls by 87.5 % by merging 8 calls into 1.', ' Created SQL backend and middleware agents to represent data in a visually appealing format on the frontend',
+            'Led the migration from Lotus Notes, HTML, and CSS to a full-stack Typescript, React, Node, and SQL service',
+            'Reduced API overhead by 87.5 % through deep analysis of workflows and callbacks, improving overall performance',
+            'Created SQL backend and middleware agents to represent data in a visually appealing format on the frontend',
          ],
          fromDate: "Jan 2024",
          toDate: "Apr 2024",
@@ -70,9 +80,9 @@ export const Info = () => {
          jobTitle: "Software Engineer",
          companyLogo: CCG,
          jobDescription: [
-            `Engineered a Vue.js-based check-in platform, reducing check-in time by 95% and processing over 50 attendees.`,
-            `Utilized Firebase's Real-time Database API for dynamic monitoring and visualization of attendee check-in metrics.`,
-            `Analyzed and compiled a dataset of 5+ LMSs according to attendees' profiles.`,
+            `Implemented a Vue.JS-based check-in platform, cutting check-in time by 95% and managing over 50 attendees`,
+            `Utilized Firebase Real-time Database API for dynamic attendee check-in monitoring and visualization`,
+            `Analyzed 5+ CMS and headless CMS platforms based on user profiles and integration capabilities`,
          ],
          fromDate: "Aug 2023",
          toDate: "Dec 2023",
@@ -82,9 +92,8 @@ export const Info = () => {
          jobTitle: "Software Engineer Intern",
          companyLogo: MD,
          jobDescription: [
-            `Engineered multiple CRUD systems, enabling efficient communications with backend services, and enhancing overall application performance.`,
-            `Utilized user behavior analytics tools to systematically improve UX, resulting in more intuitive navigation and user flow on the company’s app and website.`,
-            `Selected as MuslimDo's inaugural intern due to proactive initiative and dedicated outreach.`,
+            `Reduced API overhead by 34% through payload size reduction and lazy loading implementation`,
+            `Cut drop-off rates by 12% by streamlining the signup and data collection process`,
          ],
          fromDate: "May 2023",
          toDate: "Aug 2023",
@@ -110,7 +119,7 @@ export const Info = () => {
          fromDate: "Sep 2022",
          toDate: "Present",
          schoolLogo: Uw,
-         relevantCourses: ["Algorithm Design and Data Abstraction", "Tools and Techniques for Software Development", "Object-Oriented Software Development"],
+         relevantCourses: ["Algorithm Design and Data Abstraction", "Object-Oriented Software Development", "Intro to Optimization", "Data Structures and Data Management"],
       },
       {
          name: "Wilfrid Lauirer University",
@@ -118,7 +127,7 @@ export const Info = () => {
          fromDate: "Sep 2022",
          toDate: "Present",
          schoolLogo: Wlu,
-         relevantCourses: [],
+         relevantCourses: ["Call me a BUSINESS man"],
       },
    ]
 
@@ -134,7 +143,7 @@ export const Info = () => {
                            <Nav.Link eventKey="first">Experience</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                           <Nav.Link eventKey="second">Projects</Nav.Link>
+                           <Nav.Link eventKey="second">Some Projects</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                            <Nav.Link eventKey="third">Education</Nav.Link>

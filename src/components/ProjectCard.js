@@ -15,7 +15,7 @@ export const ProjectCard = ({ title, description, imgUrl, projectUrl }) => {
                   rel="noopener noreferrer"
                   href={projectUrl}
                >
-                  <h6>Check It Out</h6>
+                  <h6 style={projectUrl ? { display: "body" } : { display: "none" }}>Check It Out</h6>
                </a>
             </div>
          </div>
