@@ -8,10 +8,12 @@ import LCHints from "../assets/img/LCHints.png"
 import FundFlow from "../assets/img/FundFlow.png"
 import Sortify from "../assets/img/SortifyAI.png"
 import Chess from "../assets/img/chess.png"
+import LinkedPin from "../assets/img/LinkedPin.jpg"
 import MD from "../assets/img/MD2.png"
 import Kenna from "../assets/img/Kenna.png"
 import IIC from "../assets/img/IICUwaterloo.png"
 import CCG from "../assets/img/CCG.png"
+import MedSender from "../assets/img/medsender.jpeg"
 import tabLogo from "../assets/img/tab.png"
 import Uw from "../assets/img/uw.png"
 import Wlu from "../assets/img/wlu.png"
@@ -19,16 +21,21 @@ import Wlu from "../assets/img/wlu.png"
 export const Info = () => {
    const projects = [
       {
+         title: "LinkedPin",
+         description: "On the chrome store soon: An AI-powered Chrome extension that summarizes and automates reminders for saved LinkedIn posts, built with React frontend and Java/Spring Boot backend with PostgreSQL database.",
+         imgUrl: LinkedPin,
+         projectUrl: "https://github.com/Ossama-E/LinkedPin",
+      },
+      {
          title: "Chess",
          description: "A a full chess game in C++ using advanced OOP, implemented features like checkmate, castling, and more.",
          imgUrl: Chess,
-         // projectUrl: "https://neighboard.netlify.app/#/",
       },
       {
          title: "Sortify.AI",
          description: "An ML-powered app for real-time waste sorting, featured at UTM's 2023 DeerHacks Hackathon.",
          imgUrl: Sortify,
-         projectUrl: "test.com",
+         projectUrl: "https://github.com/Ossama-E/Sortify.AI",
       },
       {
          title: "LCHints",
@@ -52,13 +59,25 @@ export const Info = () => {
    ]
    const experience = [
       {
+         companyName: "MedSender",
+         jobTitle: "Software Engineer",
+         companyLogo: MedSender,
+         jobDescription: [
+            'Reduced developer onboarding time by 90% by Dockerizing the web app and integrating SQL, Redis, and ELK.',
+            'Implemented a scalable number lookup service with RESTful APIs and robust error handling.',
+            'Optimized a 2FA service with enhanced authentication protocols for secure user onboarding.',
+         ],
+         fromDate: "Jan 2025",
+         toDate: "Present",
+      },
+      {
          companyName: "IIC UWaterloo",
          jobTitle: "Software Engineer",
          companyLogo: IIC,
          jobDescription: [
             'Accelerated search results by 20% by implementing a dynamic filter to remove outdated and empty records',
             'Cut email manual errors by 30 % through automated email workflows using Google App Script',
-            'Developed multiple sponsor pages that curated to each clients’ highlights and benefits'
+            `Developed multiple sponsor pages that curated to each clients' highlights and benefits`
          ],
          fromDate: "May 2024",
          toDate: "Aug 2024",
@@ -127,7 +146,7 @@ export const Info = () => {
          fromDate: "Sep 2022",
          toDate: "Present",
          schoolLogo: Wlu,
-         relevantCourses: ["Call me a BUSINESS man"],
+         relevantCourses: [],
       },
    ]
 
