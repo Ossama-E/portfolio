@@ -127,7 +127,7 @@ export const Info = () => {
          toDate: "Dec 2023",
       },
       {
-         companyName: "ND",
+         companyName: "MD",
          jobTitle: "Software Engineer Intern",
          companyLogo: MD,
          location: "Burlington, ON",
@@ -180,9 +180,26 @@ export const Info = () => {
                      </Nav>
                      <Tab.Content>
                         <Tab.Pane eventKey="first">
+                           <div className="experience-timeline-container">
+                              <div className="floating-timeline">
+                                 <div className="timeline-track"></div>
+                                 {experience.map((exp, index) => (
+                                    <div 
+                                       key={index} 
+                                       className="timeline-marker"
+                                       style={{left: `${(index / (experience.length - 1)) * 100}%`}}
+                                    >
+                                       <div className="marker-dot">
+                                          <div className="marker-pulse"></div>
+                                       </div>
+                                       <div className="marker-date">{exp.fromDate}</div>
+                                    </div>
+                                 ))}
+                              </div>
+                           </div>
                            <Row>
                               {experience.map((experience, index) => {
-                                 return <WorkCard key={index} {...experience} />
+                                 return <WorkCard key={index} {...experience} index={index} />
                               })}
                            </Row>
                         </Tab.Pane>

@@ -955,7 +955,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .job-meta {
    display: flex;
    gap: 20px;
-   flex-wrap: wrap;
+   flex-wrap: nowrap;
+   align-items: center;
 }
 
 .job-meta span {
@@ -964,6 +965,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
    gap: 5px;
    font-size: 14px;
    color: #b8b8b8;
+   white-space: nowrap;
+   flex-shrink: 0;
 }
 
 .technologies {
@@ -1071,4 +1074,458 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
       margin-top: 0px;
    }
 
+}
+
+.experience-sort-indicator {
+   margin-bottom: 30px;
+   text-align: center;
+}
+
+.simple-sort-indicator {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 15px;
+   padding: 12px 20px;
+   background: rgba(194, 41, 64, 0.1);
+   border: 1px solid rgba(194, 41, 64, 0.2);
+   border-radius: 20px;
+   max-width: 300px;
+   margin: 0 auto;
+}
+
+.sort-badge {
+   font-size: 14px;
+   color: #c22940;
+   font-weight: 600;
+}
+
+.sort-direction {
+   font-size: 12px;
+   color: #b8b8b8;
+   background: rgba(255, 255, 255, 0.1);
+   padding: 4px 8px;
+   border-radius: 8px;
+}
+
+/* Remove the SVG styles */
+.sort-arrow svg {
+   display: none;
+}
+
+@media (max-width: 768px) {
+   .sort-explanation {
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px;
+   }
+   
+   .sort-arrow svg {
+      transform: rotate(90deg);
+      width: 8px;
+      height: 40px;
+   }
+}
+
+.timeline-chart {
+   background: rgba(255, 255, 255, 0.05);
+   border: 1px solid rgba(255, 255, 255, 0.1);
+   border-radius: 15px;
+   padding: 25px;
+   backdrop-filter: blur(10px);
+   max-width: 600px;
+   margin: 0 auto;
+}
+
+.chart-title {
+   text-align: center;
+   font-size: 16px;
+   color: #c22940;
+   font-weight: 600;
+   margin-bottom: 20px;
+}
+
+.timeline-container {
+   position: relative;
+   height: 60px;
+   margin-bottom: 15px;
+}
+
+.timeline-line {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   right: 0;
+   height: 2px;
+   background: linear-gradient(90deg, #c22940 0%, #1A1F31 100%);
+   transform: translateY(-50%);
+}
+
+.timeline-points {
+   position: relative;
+   height: 100%;
+}
+
+.timeline-point {
+   position: absolute;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.point-dot {
+   width: 12px;
+   height: 12px;
+   background: #c22940;
+   border: 3px solid #121212;
+   border-radius: 50%;
+   margin: 0 auto 8px auto;
+   box-shadow: 0 0 0 2px rgba(194, 41, 64, 0.3);
+}
+
+.point-label {
+   font-size: 12px;
+   color: #b8b8b8;
+   text-align: center;
+   white-space: nowrap;
+   font-weight: 500;
+}
+
+.chart-labels {
+   display: flex;
+   justify-content: space-between;
+   font-size: 14px;
+   color: #b8b8b8;
+   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+   .timeline-chart {
+      padding: 20px 15px;
+   }
+   
+   .point-label {
+      font-size: 10px;
+   }
+   
+   .chart-labels {
+      font-size: 12px;
+   }
+}
+
+.career-progression {
+   background: linear-gradient(135deg, rgba(194, 41, 64, 0.1) 0%, rgba(26, 31, 49, 0.1) 100%);
+   border: 1px solid rgba(194, 41, 64, 0.2);
+   border-radius: 20px;
+   padding: 30px;
+   backdrop-filter: blur(10px);
+   max-width: 500px;
+   margin: 0 auto;
+}
+
+.progression-title {
+   text-align: center;
+   font-size: 18px;
+   color: #c22940;
+   font-weight: 700;
+   margin-bottom: 25px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+
+.title-icon {
+   font-size: 24px;
+}
+
+.progression-visual {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.progression-step {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+   position: relative;
+}
+
+.step-number {
+   width: 40px;
+   height: 40px;
+   background: linear-gradient(135deg, #c22940, #1A1F31);
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   font-weight: 700;
+   font-size: 16px;
+   flex-shrink: 0;
+   box-shadow: 0 4px 15px rgba(194, 41, 64, 0.3);
+}
+
+.step-content {
+   flex: 1;
+   background: rgba(255, 255, 255, 0.05);
+   padding: 15px 20px;
+   border-radius: 12px;
+   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.step-company {
+   font-size: 16px;
+   font-weight: 600;
+   color: #c22940;
+   margin-bottom: 4px;
+}
+
+.step-role {
+   font-size: 14px;
+   color: #fff;
+   margin-bottom: 4px;
+}
+
+.step-duration {
+   font-size: 12px;
+   color: #b8b8b8;
+   font-style: italic;
+}
+
+.step-connector {
+   position: absolute;
+   left: 19px;
+   top: 60px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   z-index: 1;
+}
+
+.connector-line {
+   width: 2px;
+   height: 20px;
+   background: linear-gradient(180deg, #c22940, #1A1F31);
+}
+
+.connector-arrow {
+   font-size: 16px;
+   margin-top: 2px;
+}
+
+.progression-note {
+   text-align: center;
+   margin-top: 20px;
+   padding: 15px;
+   background: rgba(194, 41, 64, 0.1);
+   border-radius: 10px;
+   font-size: 14px;
+   color: #b8b8b8;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 8px;
+}
+
+.note-icon {
+   font-size: 16px;
+}
+
+@media (max-width: 768px) {
+   .career-progression {
+      padding: 20px 15px;
+   }
+   
+   .step-number {
+      width: 35px;
+      height: 35px;
+      font-size: 14px;
+   }
+   
+   .step-content {
+      padding: 12px 15px;
+   }
+   
+   .step-company {
+      font-size: 14px;
+   }
+   
+   .step-role {
+      font-size: 13px;
+   }
+}
+
+.experience-timeline-container {
+   position: relative;
+   margin-bottom: 40px;
+   padding: 0 40px;
+   overflow: visible;
+}
+
+.floating-timeline {
+   position: relative;
+   height: 80px;
+   background: linear-gradient(135deg, rgba(194, 41, 64, 0.05) 0%, rgba(26, 31, 49, 0.05) 100%);
+   border-radius: 40px;
+   backdrop-filter: blur(20px);
+   border: 1px solid rgba(194, 41, 64, 0.1);
+   overflow: visible;
+   margin: 0 20px;
+}
+
+.timeline-track {
+   position: absolute;
+   top: 50%;
+   left: 8%;
+   right: 8%;
+   height: 2px;
+   background: linear-gradient(90deg, 
+      rgba(194, 41, 64, 0.3) 0%, 
+      rgba(194, 41, 64, 0.8) 50%, 
+      rgba(26, 31, 49, 0.3) 100%);
+   transform: translateY(-50%);
+   border-radius: 1px;
+}
+
+.timeline-marker {
+   position: absolute;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 10;
+}
+
+.marker-dot {
+   width: 16px;
+   height: 16px;
+   background: linear-gradient(135deg, #c22940, #1A1F31);
+   border: 3px solid #121212;
+   border-radius: 50%;
+   position: relative;
+   box-shadow: 0 0 20px rgba(194, 41, 64, 0.4);
+   animation: timelinePulse 2s ease-in-out infinite;
+}
+
+.marker-pulse {
+   position: absolute;
+   top: -8px;
+   left: -8px;
+   right: -8px;
+   bottom: -8px;
+   border: 2px solid rgba(194, 41, 64, 0.3);
+   border-radius: 50%;
+   animation: pulse 2s ease-in-out infinite;
+}
+
+.marker-date {
+   position: absolute;
+   top: -35px;
+   left: 50%;
+   transform: translateX(-50%);
+   font-size: 11px;
+   color: #c22940;
+   font-weight: 600;
+   background: rgba(18, 18, 18, 0.9);
+   padding: 4px 8px;
+   border-radius: 6px;
+   white-space: nowrap;
+   border: 1px solid rgba(194, 41, 64, 0.2);
+   max-width: 80px;
+   text-align: center;
+}
+
+.work-exp-card {
+   position: relative;
+   margin-bottom: 30px;
+   transition: all 0.3s ease;
+}
+
+.work-exp-card:hover {
+   transform: translateY(-5px);
+}
+
+.timeline-connector {
+   position: absolute;
+   left: -15px;
+   top: 50px;
+   width: 3px;
+   height: calc(100% - 100px);
+   background: linear-gradient(180deg, 
+      rgba(194, 41, 64, 0.6) 0%, 
+      rgba(194, 41, 64, 0.2) 50%, 
+      transparent 100%);
+   border-radius: 2px;
+   opacity: 0.7;
+   transition: opacity 0.3s ease;
+}
+
+.work-exp-card:hover .timeline-connector {
+   opacity: 1;
+   box-shadow: 0 0 10px rgba(194, 41, 64, 0.3);
+}
+
+.work-exp-card[data-timeline-index="0"] .timeline-connector {
+   background: linear-gradient(180deg, 
+      rgba(194, 41, 64, 0.8) 0%, 
+      rgba(194, 41, 64, 0.3) 100%);
+}
+
+.work-exp-card[data-timeline-index="0"]::before {
+   content: "🔥";
+   position: absolute;
+   left: -25px;
+   top: 20px;
+   font-size: 16px;
+   z-index: 5;
+}
+
+@keyframes timelinePulse {
+   0%, 100% { transform: translate(-50%, -50%) scale(1); }
+   50% { transform: translate(-50%, -50%) scale(1.1); }
+}
+
+@keyframes pulse {
+   0% { transform: scale(1); opacity: 1; }
+   100% { transform: scale(1.5); opacity: 0; }
+}
+
+@media (max-width: 768px) {
+   .floating-timeline {
+      height: 60px;
+      margin: 0 10px;
+   }
+   
+   .marker-dot {
+      width: 12px;
+      height: 12px;
+   }
+   
+   .marker-date {
+      font-size: 10px;
+      top: -30px;
+   }
+   
+   .timeline-connector {
+      left: -10px;
+   }
+}
+
+@media (max-width: 480px) {
+   .experience-timeline-container {
+      padding: 0 10px;
+   }
+   
+   .floating-timeline {
+      margin: 0 5px;
+   }
+   
+   .timeline-track {
+      left: 12%;
+      right: 12%;
+   }
+   
+   .marker-date {
+      font-size: 9px;
+      max-width: 50px;
+   }
 }
