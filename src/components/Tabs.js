@@ -8,7 +8,7 @@ import LCHints from "../assets/img/LCHints.png"
 import FundFlow from "../assets/img/FundFlow.png"
 import Sortify from "../assets/img/SortifyAI.png"
 import Chess from "../assets/img/chess.png"
-import LinkedPin from "../assets/img/LinkedPin.jpg"
+import LinkedPin from "../assets/img/LinkedPin.png"
 import MD from "../assets/img/MD2.png"
 import Kenna from "../assets/img/Kenna.png"
 import IIC from "../assets/img/IICUwaterloo.png"
@@ -24,7 +24,7 @@ export const Info = () => {
          title: "LinkedPin",
          description: "On the chrome store soon: An AI-powered Chrome extension that summarizes and automates reminders for saved LinkedIn posts, built with React frontend and Java/Spring Boot backend with PostgreSQL database.",
          imgUrl: LinkedPin,
-         projectUrl: "https://github.com/Ossama-E/LinkedPin",
+         projectUrl: "https://chromewebstore.google.com/detail/linkedpin/inmfbdikodcipdlbpdnobbceaklcjacc?",
       },
       {
          title: "Chess",
@@ -60,36 +60,48 @@ export const Info = () => {
    const experience = [
       {
          companyName: "MedSender",
-         jobTitle: "Software Engineer",
+         jobTitle: "Software Engineer Intern",
          companyLogo: MedSender,
          jobDescription: [
-            'Reduced developer onboarding time by 90% by Dockerizing the web app and integrating SQL, Redis, and ELK.',
-            'Implemented a scalable number lookup service with RESTful APIs and robust error handling.',
-            'Optimized a 2FA service with enhanced authentication protocols for secure user onboarding.',
+            'Designed and launched a new API email system by integrating Mailgun webhooks, building relational tables for messages/attachments, and developing portal UI for developer management and AI processing.',
+            'Engineered an asynchronous, batched delivery system enabling one-click distribution of documents to 50+ recipients, reducing delivery time from minutes to seconds and manual work by 98%.',
+            'Achieved 99.3% provider recognition accuracy (+30% over baseline) by architecting and fine-tuning a domain-specific NLP model and prompt, validated against golden datasets.',
          ],
-         fromDate: "Jan 2025",
+         fromDate: "May 2025",
          toDate: "Present",
       },
       {
-         companyName: "IIC UWaterloo",
+         companyName: "MedSender",
+         jobTitle: "Software Engineer Intern",
+         companyLogo: MedSender,
+         jobDescription: [
+            'Reduced transaction latency 90%+ by replacing a legacy RPA process with a 5+ feature API system, streamlining high-volume client workflows.',
+            'Cut down ML hallucinations by 35% and latency 40% by adding fuzzy detection and caching logic.',
+            'Accelerated onboarding time by 90% by Dockerizing the app and incorporating SQL, Redis, and ELK stack.',
+         ],
+         fromDate: "Jan 2025",
+         toDate: "Apr 2025",
+      },
+      {
+         companyName: "BIC UWaterloo",
          jobTitle: "Software Engineer",
          companyLogo: IIC,
          jobDescription: [
-            'Accelerated search results by 20% by implementing a dynamic filter to remove outdated and empty records',
-            'Cut email manual errors by 30 % through automated email workflows using Google App Script',
-            `Developed multiple sponsor pages that curated to each clients' highlights and benefits`
+            'Developed multiple sponsor pages that curated to each clients\' highlights and benefits.',
+            'Improved search performance by 20% through implementing dynamic filters and optimizing database sanitation.',
+            'Cut email manual errors by 30% through automated email workflows using Google App Script.',
          ],
          fromDate: "May 2024",
          toDate: "Aug 2024",
       },
       {
-         companyName: "Kenna Technologies",
-         jobTitle: "Full Stack Developer Intern",
+         companyName: "Kanna Technologies",
+         jobTitle: "Fullstack Developer Intern",
          companyLogo: Kenna,
          jobDescription: [
-            'Led the migration from Lotus Notes, HTML, and CSS to a full-stack Typescript, React, Node, and SQL service',
-            'Reduced API overhead by 87.5 % through deep analysis of workflows and callbacks, improving overall performance',
-            'Created SQL backend and middleware agents to represent data in a visually appealing format on the frontend',
+            'Led the migration of a full-stack service from Lotus Notes and HTML to Typescript, React, Node, and SQL.',
+            'Reduced API overhead by 87.5% through deep analysis of workflows and callbacks, improving overall performance.',
+            'Created SQL backend and middleware agents to represent data in a visually appealing format on the frontend.',
          ],
          fromDate: "Jan 2024",
          toDate: "Apr 2024",
@@ -99,35 +111,22 @@ export const Info = () => {
          jobTitle: "Software Engineer",
          companyLogo: CCG,
          jobDescription: [
-            `Implemented a Vue.JS-based check-in platform, cutting check-in time by 95% and managing over 50 attendees`,
-            `Utilized Firebase Real-time Database API for dynamic attendee check-in monitoring and visualization`,
-            `Analyzed 5+ CMS and headless CMS platforms based on user profiles and integration capabilities`,
+            'Built a check-in platform that reduced guest check-in time by 95% and managed over 50 attendees.',
+            'Utilized Firebase Real-time Database API for dynamic attendee check-in monitoring and visualization.',
          ],
-         fromDate: "Aug 2023",
+         fromDate: "Sep 2023",
          toDate: "Dec 2023",
       },
       {
-         companyName: "MuslimDo",
+         companyName: "ND",
          jobTitle: "Software Engineer Intern",
          companyLogo: MD,
          jobDescription: [
-            `Reduced API overhead by 34% through payload size reduction and lazy loading implementation`,
-            `Cut drop-off rates by 12% by streamlining the signup and data collection process`,
+            'Reduced API overhead by 34% through payload size reduction and lazy loading implementation.',
+            'Cut drop-off rates by 12% by streamlining the signup and data collection process.',
          ],
          fromDate: "May 2023",
          toDate: "Aug 2023",
-      },
-      {
-         companyName: "Thomas A. Blakelock",
-         jobTitle: "Math Tutor",
-         companyLogo: tabLogo,
-         jobDescription: [
-            `Developed, implemented, and explained practice problems for students.`,
-            `Assessed students' skills; guided growth in strengths and overcoming weaknesses.
-         `,
-         ],
-         fromDate: "Dec 2021",
-         toDate: "Mar 2022",
       },
    ]
 
@@ -138,15 +137,15 @@ export const Info = () => {
          fromDate: "Sep 2022",
          toDate: "Present",
          schoolLogo: Uw,
-         relevantCourses: ["Algorithm Design and Data Abstraction", "Object-Oriented Software Development", "Intro to Optimization", "Data Structures and Data Management"],
+         relevantCourses: ["Algorithm Design and Data Abstraction", "Object-Oriented Software Development", "Intro to Optimization", "Data Structures and Data Management", "Computer Networks", "Software Engineering", "Database Systems", "Machine Learning", "Computer Graphics", "Human-Computer Interaction"],
       },
       {
-         name: "Wilfrid Lauirer University",
+         name: "Wilfrid Laurier University",
          program: "Bachelor of Business Administration",
          fromDate: "Sep 2022",
          toDate: "Present",
          schoolLogo: Wlu,
-         relevantCourses: [],
+         relevantCourses: ["Financial Accounting", "Managerial Accounting", "Business Statistics", "Microeconomics", "Macroeconomics", "Marketing Management", "Operations Management", "Organizational Behavior", "Business Law", "Strategic Management"],
       },
    ]
 
