@@ -14,7 +14,6 @@ import Kenna from "../assets/img/Kenna.png"
 import IIC from "../assets/img/IICUwaterloo.png"
 import CCG from "../assets/img/CCG.png"
 import MedSender from "../assets/img/medsender.jpeg"
-import tabLogo from "../assets/img/tab.png"
 import Uw from "../assets/img/uw.png"
 import Wlu from "../assets/img/wlu.png"
 
@@ -62,6 +61,8 @@ export const Info = () => {
          companyName: "MedSender",
          jobTitle: "Software Engineer Intern",
          companyLogo: MedSender,
+         location: "New York City, NY",
+         technologies: ["Ruby on Rails", "Redis", "Elasticsearch", "Python", "Docker", "React"],
          jobDescription: [
             'Designed and launched a new API email system by integrating Mailgun webhooks, building relational tables for messages/attachments, and developing portal UI for developer management and AI processing.',
             'Engineered an asynchronous, batched delivery system enabling one-click distribution of documents to 50+ recipients, reducing delivery time from minutes to seconds and manual work by 98%.',
@@ -74,6 +75,8 @@ export const Info = () => {
          companyName: "MedSender",
          jobTitle: "Software Engineer Intern",
          companyLogo: MedSender,
+         location: "New York City, NY",
+         technologies: ["Ruby on Rails", "Redis", "Elasticsearch", "Python", "Docker", "React"],
          jobDescription: [
             'Reduced transaction latency 90%+ by replacing a legacy RPA process with a 5+ feature API system, streamlining high-volume client workflows.',
             'Cut down ML hallucinations by 35% and latency 40% by adding fuzzy detection and caching logic.',
@@ -86,6 +89,8 @@ export const Info = () => {
          companyName: "BIC UWaterloo",
          jobTitle: "Software Engineer",
          companyLogo: IIC,
+         location: "Waterloo, ON",
+         technologies: ["TypeScript", "Next.js", "Google App Script"],
          jobDescription: [
             'Developed multiple sponsor pages that curated to each clients\' highlights and benefits.',
             'Improved search performance by 20% through implementing dynamic filters and optimizing database sanitation.',
@@ -98,6 +103,8 @@ export const Info = () => {
          companyName: "Kanna Technologies",
          jobTitle: "Fullstack Developer Intern",
          companyLogo: Kenna,
+         location: "Mississauga, ON",
+         technologies: ["TypeScript", "React.js", "SQL", "Node.js", "Express.js"],
          jobDescription: [
             'Led the migration of a full-stack service from Lotus Notes and HTML to Typescript, React, Node, and SQL.',
             'Reduced API overhead by 87.5% through deep analysis of workflows and callbacks, improving overall performance.',
@@ -110,6 +117,8 @@ export const Info = () => {
          companyName: "Coach Chihab Group",
          jobTitle: "Software Engineer",
          companyLogo: CCG,
+         location: "Burlington, ON",
+         technologies: ["Vue.js", "Firebase"],
          jobDescription: [
             'Built a check-in platform that reduced guest check-in time by 95% and managed over 50 attendees.',
             'Utilized Firebase Real-time Database API for dynamic attendee check-in monitoring and visualization.',
@@ -121,6 +130,8 @@ export const Info = () => {
          companyName: "ND",
          jobTitle: "Software Engineer Intern",
          companyLogo: MD,
+         location: "Burlington, ON",
+         technologies: ["Vue.js", "PHP"],
          jobDescription: [
             'Reduced API overhead by 34% through payload size reduction and lazy loading implementation.',
             'Cut drop-off rates by 12% by streamlining the signup and data collection process.',
@@ -137,7 +148,7 @@ export const Info = () => {
          fromDate: "Sep 2022",
          toDate: "Present",
          schoolLogo: Uw,
-         relevantCourses: ["Algorithm Design and Data Abstraction", "Object-Oriented Software Development", "Intro to Optimization", "Data Structures and Data Management", "Computer Networks", "Software Engineering", "Database Systems", "Machine Learning", "Computer Graphics", "Human-Computer Interaction"],
+         relevantCourses: ["Algorithm Design and Data Abstraction", "Object-Oriented Software Development", "Intro to Optimization", "Data Structures and Data Management", "Compilers", "Algorithm Design and Data Abstraction"],
       },
       {
          name: "Wilfrid Laurier University",
@@ -145,7 +156,7 @@ export const Info = () => {
          fromDate: "Sep 2022",
          toDate: "Present",
          schoolLogo: Wlu,
-         relevantCourses: ["Financial Accounting", "Managerial Accounting", "Business Statistics", "Microeconomics", "Macroeconomics", "Marketing Management", "Operations Management", "Organizational Behavior", "Business Law", "Strategic Management"],
+         relevantCourses: ["Financial Accounting", "Managerial Accounting", "Business Statistics", "Microeconomics", "Macroeconomics", "Marketing Management", "Operations Management", "Organizational Behavior", "Business Law"],
       },
    ]
 
